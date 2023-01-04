@@ -1,9 +1,57 @@
 :root {
-    --mainpurple:rgba(6, 95, 53, 0.854);
-   
+    --maingreen: rgba(6, 95, 85, 0.854);
+    --maintext: rgba(64, 2, 25, 0.906);
+}
+
+* {
+    border: 3px solid rgba(64, 2, 25, 0.906);
+    color: whitesmoke
+}
+
+code {
+    border: none;
+}
+
+body {
+    background-color: var(--maingreen);
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--maintext)
+}
+
+@media screen and (min-width: 768px) {
+    /* todo */
+    *{
+    border-color: blue;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* todo */
+    *{
+        border-color: yellow;
+        }
+}
+
+
+
+
+
+/* header {
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
@@ -22,8 +70,16 @@ header {
 
 }
 
+h2 {
+    border-style:solid;
+   
+
+}
+
 h2,h3,section>p {
     text-align: center;
+
+    
 }
 
 section {
@@ -31,6 +87,7 @@ section {
     margin-bottom: 50px;
     margin-right: 50px;
     margin-top: 50px;
+    border-style: dotted;
 }
 
 h3 {
@@ -38,4 +95,4 @@ h3 {
     font-weight: lighter;
     font-style: oblique;
     
-}
+} */
