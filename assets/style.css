@@ -1,19 +1,20 @@
 :root {
     --maingreen: rgba(6, 95, 85, 0.854);
-    --maintext: rgba(64, 2, 25, 0.906);
+    --maintext: rgba(94, 15, 66, 0.906);
 }
 
 * {
-    border: 3px solid rgba(64, 2, 25, 0.906);
-    color: whitesmoke
+    color: whitesmoke;
 }
 
 code {
     border: none;
+    font-family: monospace;
 }
 
 body {
     background-color: var(--maingreen);
+    line-height: 1.2;
 }
 
 header {
@@ -24,75 +25,82 @@ header {
 
 }
 
+main {
+    padding: 16px;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    color: var(--maintext)
+    color: var(--maintext);
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin: 24px 0;
+}
+
+p {
+    margin: 0 0 16px 0;
+}
+
+header p {
+    padding: 0 15%;
+}
+
+.border-radius {
+    border-radius: 25px;
+}
+
+.card .card-column pre {
+    padding: 0 16px;
+    white-space: break-spaces;
+    background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%,
+            rgba(232, 102, 236, 0.6) 100%);
+ 
+
+}
+
+.card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 16px;
+}
+
+.card-column {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px dashed whitesmoke;
+
 }
 
 @media screen and (min-width: 768px) {
-    /* todo */
-    *{
-    border-color: blue;
+
+
+    .card {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 }
 
 @media screen and (min-width: 992px) {
-    /* todo */
-    *{
-        border-color: yellow;
-        }
+
+    .card {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
 }
 
 
 
 
-
-/* header {
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 50px 50px 50px 50px;
-}
-
-.background {
-   background-color: var(--mainpurple);
-
-}
-
-.grid {
-    display: grid;
-    width:100%;
-    grid-template-columns: auto auto auto;
-
-}
-
-h2 {
-    border-style:solid;
-   
-
-}
-
-h2,h3,section>p {
-    text-align: center;
-
-    
-}
-
-section {
-    margin-left: 50px;
-    margin-bottom: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
-    border-style: dotted;
-}
-
-h3 {
-    padding-top: 200px;
-    font-weight: lighter;
-    font-style: oblique;
-    
-} */
